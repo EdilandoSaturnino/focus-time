@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self';" />
+    <title>Focus Time</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="clock"></div>
+    <div id="corner">
+      <div id="timer" aria-label="Cronômetro">
+      <span id="timer-display">00:00:00</span>
+      <input id="timer-h" type="number" min="0" placeholder="h" aria-label="Horas" />
+      <input id="timer-m" type="number" min="0" max="59" placeholder="m" aria-label="Minutos" />
+      <input id="timer-s" type="number" min="0" max="59" placeholder="s" aria-label="Segundos" />
+      <button id="timer-toggle">Iniciar</button>
+      <button id="timer-reset">Zerar</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

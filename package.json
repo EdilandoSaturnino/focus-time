@@ -1,0 +1,29 @@
+{
+  "name": "focus-time",
+  "productName": "Focus Time",
+  "version": "1.0.0",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdilandoSaturnino/focus-time.git"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.0",
+    "@electron-forge/maker-squirrel": "^7.6.0",
+    "@electron-forge/maker-zip": "^7.6.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
+    "electron": "^31.7.7"
+  },
+  "dependencies": {
+    "update-electron-app": "^3.0.0"
+  }
+}
+
+

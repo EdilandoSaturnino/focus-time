@@ -1,0 +1,87 @@
+body {
+  background: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#clock {
+  font-size: clamp(64px, 20vw, 28rem);
+  font-weight: 800;
+  color: #fff;
+  font-family: "Roboto Mono", "JetBrains Mono", monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+#corner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 96px;
+  pointer-events: auto;
+}
+
+#timer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: #fff;
+  font-family: "Roboto Mono", "JetBrains Mono", monospace;
+  font-size: clamp(12px, 2.4vw, 18px);
+  font-variant-numeric: tabular-nums;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 220ms ease, transform 220ms ease;
+  pointer-events: none;
+}
+
+#corner:hover #timer,
+#timer:focus-within {
+  opacity: 0.95;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#timer input {
+  width: 3.6em;
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  outline: none;
+}
+
+#timer button {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+}
+
+#timer button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+#timer-display {
+  min-width: 8ch;
+  text-align: center;
+}
+
+#timer.done #timer-display {
+  color: #ff7b7b;
+  text-shadow: 0 0 16px rgba(255, 123, 123, 0.5);
+}
+
+
