@@ -3,6 +3,9 @@
   "productName": "Focus Time",
   "version": "1.0.0",
   "private": true,
+  "description": "Fullscreen clock with built-in countdown timer for focus sessions (Electron).",
+  "author": "Edilando Saturnino",
+  "license": "MIT",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
